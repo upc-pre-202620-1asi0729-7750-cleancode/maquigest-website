@@ -1,0 +1,123 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+    /* Paleta de MaquiGest */
+    --color-primary: #1e3a5f;
+    --color-primary-dark: #1e293b;
+    --color-primary-light: #e2e8f0;
+    --color-secondary: #2563eb;
+    --color-accent: #f59e0b;
+
+    --color-background: #f8fafc;
+    --color-surface: #ffffff;
+    --color-surface-soft: #f8fafc;
+
+    --color-text: #1e293b;
+    --color-text-muted: #64748b;
+    --color-border: #e2e8f0;
+
+    /* Sombras */
+    --shadow-soft: 0 18px 45px rgba(30, 58, 95, 0.08);
+    --shadow-card-hover: 0 24px 60px rgba(30, 58, 95, 0.12);
+    --shadow-button: 0 10px 24px rgba(30, 58, 95, 0.2);
+
+    /* Bordes redondeados de la base de LowCortisol */
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 30px;
+    --radius-pill: 999px;
+
+    /* Tipografía */
+    --font-main: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+
+    /* Ancho compartido */
+    --page-max-width: 1080px;
+}
+
+/* Ajustes generales */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-padding-top: 92px;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-main);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Controles */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: var(--color-secondary);
+}
+
+/* Recursos visuales */
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+}
+
+section {
+    position: relative;
+}
+
+/* Navegación con teclado */
+:focus-visible {
+    outline: 3px solid var(--color-secondary);
+    outline-offset: 4px;
+}
+
+::selection {
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+}
+
+/* Contenedores compartidos de LowCortisol */
+.home-container,
+.benefits-container,
+.features-container,
+.about-container,
+.plans-container,
+.contact-container,
+.footer-container {
+    width: min(var(--page-max-width), calc(100% - 32px));
+    margin: 0 auto;
+}
+
+/* Desplazamiento suave según la preferencia del usuario */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
