@@ -2,17 +2,18 @@
 
 document.documentElement.classList.add("js");
 
+/* Language switching */
 const languageButton = document.getElementById("language-toggle");
 
-const translatedElements = [...document.querySelectorAll("[data-es]")].map(
-    (element) => ({
-        element,
-        english: element.tagName === "META"
-            ? element.getAttribute("content")
-            : element.textContent,
-        spanish: element.dataset.es,
-    })
-);
+const translatedElements = [
+    ...document.querySelectorAll("[data-es]")
+].map((element) => ({
+    element,
+    english: element.tagName === "META"
+        ? element.getAttribute("content")
+        : element.textContent,
+    spanish: element.dataset.es,
+}));
 
 let currentLanguage = "en-US";
 
@@ -53,16 +54,21 @@ function changeLanguage(language) {
     try {
         localStorage.setItem("maquigest-language", language);
     } catch {
-        // Saving a preference is optional.
+        // Saving the language preference is optional.
     }
 }
 
 languageButton?.addEventListener("click", () => {
-    changeLanguage(currentLanguage === "en-US" ? "es-419" : "en-US");
+    const nextLanguage = currentLanguage === "en-US"
+        ? "es-419"
+        : "en-US";
+
+    changeLanguage(nextLanguage);
 });
 
 changeLanguage(currentLanguage);
 
+/* Mobile navigation */
 const menuButton = document.getElementById("menu-toggle");
 const navigation = document.getElementById("nav-menu");
 
@@ -75,22 +81,30 @@ if (menuButton && navigation) {
     }
 
     menuButton.addEventListener("click", () => {
-        setMenu(menuButton.getAttribute("aria-expanded") !== "true");
+        const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+        setMenu(!isOpen);
     });
 
     navigation.addEventListener("click", (event) => {
-        if (event.target.closest("a")) setMenu(false);
+        if (event.target.closest("a")) {
+            setMenu(false);
+        }
     });
 
     document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape" && navigation.classList.contains("is-open")) {
+        if (
+            event.key === "Escape" &&
+            navigation.classList.contains("is-open")
+        ) {
             setMenu(false);
             menuButton.focus();
         }
     });
 
     document.addEventListener("click", (event) => {
-        if (!event.target.closest(".header")) setMenu(false);
+        if (!event.target.closest(".header")) {
+            setMenu(false);
+        }
     });
 
     window.matchMedia("(min-width: 981px)").addEventListener("change", () => {
