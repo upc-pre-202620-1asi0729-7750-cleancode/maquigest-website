@@ -1,19 +1,23 @@
 ﻿<!doctype html>
-<html lang="es">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>MaquiGest | Gestión de alquiler de maquinaria</title>
+    <title data-es="MaquiGest | Gestión de alquiler de maquinaria">
+        MaquiGest | Equipment rental management
+    </title>
 
     <meta
             name="description"
-            content="Gestiona el alquiler de maquinaria para construcción en un solo lugar. Controla equipos, reservas, alquileres, mantenimiento y operaciones con MaquiGest."
+            content="Manage construction equipment rentals in one place. Organize inventory, availability, reservations, rentals and maintenance with MaquiGest."
+            data-es="Gestiona el alquiler de maquinaria para construcción en un solo lugar. Organiza inventario, disponibilidad, reservas, alquileres y mantenimiento con MaquiGest."
     />
 
     <meta
             name="keywords"
-            content="alquiler de maquinaria, gestión de maquinaria, alquiler de equipos, maquinaria para construcción, software de alquiler, gestión de alquileres, MaquiGest"
+            content="equipment rental, construction equipment, rental management software, MaquiGest"
+            data-es="alquiler de maquinaria, gestión de maquinaria, alquiler de equipos, maquinaria para construcción, software de alquiler, gestión de alquileres, MaquiGest"
     />
 
     <meta name="author" content="CleanCode" />
@@ -23,12 +27,82 @@
 </head>
 
 <body>
-<!-- Aquí incorporaremos el encabezado. -->
+<a
+        class="skip-link"
+        href="#main-content"
+        data-es="Saltar al contenido"
+>
+    Skip to content
+</a>
+
+<header class="header">
+    <div class="header-container">
+        <a class="brand" href="#home">
+            <img
+                    src="assets/images/maquigest-symbol.jpeg"
+                    alt=""
+                    width="1032"
+                    height="731"
+            />
+            <span>MaquiGest</span>
+        </a>
+
+        <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-controls="nav-menu"
+                aria-expanded="false"
+                hidden
+        >
+            <span data-es="Menú">Menu</span>
+        </button>
+
+        <span
+                class="sr-only"
+                id="navigation-label"
+                data-es="Navegación principal"
+        >
+          Main navigation
+        </span>
+
+        <nav
+                class="header-nav"
+                id="nav-menu"
+                aria-labelledby="navigation-label"
+        >
+            <a href="#home" data-es="Inicio">Home</a>
+            <a href="#benefits" data-es="Beneficios">Benefits</a>
+            <a href="#features" data-es="Funcionalidades">Features</a>
+            <a href="#about" data-es="Nosotros">About</a>
+            <a href="#planes" data-es="Planes">Plans</a>
+            <a href="#contact" data-es="Contacto">Contact</a>
+
+            <a
+                    class="nav-demo"
+                    href="#demo"
+                    data-es="Solicitar demo"
+            >
+                Request demo
+            </a>
+        </nav>
+
+        <button
+                class="language-toggle"
+                id="language-toggle"
+                type="button"
+                lang="es-419"
+                hidden
+        >
+            Español
+        </button>
+    </div>
+</header>
 
 <main id="main-content">
-    <!-- Aquí incorporaremos las secciones de la landing. -->
+    <!-- HOME -->
 </main>
 
-<!-- Aquí incorporaremos el pie de página. -->
+<!-- FOOTER -->
 </body>
 </html>
