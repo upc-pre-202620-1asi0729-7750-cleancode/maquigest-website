@@ -24,6 +24,7 @@
 
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/main.js" defer></script>
+    <script src="js/forms.js" defer></script>
 </head>
 
 <body>
@@ -787,6 +788,189 @@
                 Indicative plans and prices in Peruvian soles (PEN), subject
                 to confirmation.
             </p>
+        </div>
+    </section>
+    <section
+            class="demo-section"
+            id="demo"
+            aria-labelledby="demo-title"
+    >
+        <div class="demo-container">
+            <div class="demo-content">
+          <span class="demo-badge" data-es="Solicitar demo">
+            Request a demo
+          </span>
+
+                <h2
+                        id="demo-title"
+                        data-es="Conoce cómo MaquiGest puede ayudarte a gestionar tus alquileres"
+                >
+                    Discover how MaquiGest can help you manage your rentals
+                </h2>
+
+                <p
+                        class="demo-description"
+                        data-es="Cuéntanos sobre tu empresa y lo que necesitas organizar. Nuestro equipo te contactará para coordinar una demostración."
+                >
+                    Tell us about your company and what you need to organize.
+                    Our team will contact you to arrange a demonstration.
+                </p>
+
+                <p
+                        class="demo-note"
+                        data-es="Puedes solicitar una demostración aunque todavía no hayas elegido un plan."
+                >
+                    You can request a demonstration even if you have not
+                    chosen a plan yet.
+                </p>
+            </div>
+
+            <form
+                    class="demo-form"
+                    id="demo-form"
+                    action= https://formspree.io/f/xdeoyggo
+                    method="POST"
+                    aria-labelledby="demo-form-title"
+                    aria-describedby="demo-required-note"
+            >
+                <input type="hidden" name="request_type" value="demo" />
+                <input type="hidden" name="_language" value="en" />
+
+                <h3 id="demo-form-title" data-es="Tus datos">
+                    Your details
+                </h3>
+
+                <p
+                        class="demo-form-note"
+                        id="demo-required-note"
+                        data-es="Los campos con * son obligatorios."
+                >
+                    Fields marked with * are required.
+                </p>
+
+                <div class="demo-form-grid">
+                    <div class="demo-field">
+                        <label
+                                for="demo-name"
+                                data-es="Nombre completo *"
+                        >
+                            Full name *
+                        </label>
+
+                        <input
+                                type="text"
+                                id="demo-name"
+                                name="name"
+                                autocomplete="name"
+                                minlength="2"
+                                maxlength="100"
+                                required
+                        />
+                    </div>
+
+                    <div class="demo-field">
+                        <label
+                                for="demo-email"
+                                data-es="Correo electrónico *"
+                        >
+                            Email address *
+                        </label>
+
+                        <input
+                                type="email"
+                                id="demo-email"
+                                name="email"
+                                autocomplete="email"
+                                maxlength="254"
+                                required
+                        />
+                    </div>
+
+                    <div class="demo-field demo-field-full">
+                        <label
+                                for="demo-company"
+                                data-es="Nombre de la empresa *"
+                        >
+                            Company name *
+                        </label>
+
+                        <input
+                                type="text"
+                                id="demo-company"
+                                name="company"
+                                autocomplete="organization"
+                                minlength="2"
+                                maxlength="120"
+                                required
+                        />
+                    </div>
+
+                    <div class="demo-field demo-field-full">
+                        <label
+                                for="demo-plan"
+                                data-es="Plan de interés"
+                        >
+                            Plan of interest
+                        </label>
+
+                        <select id="demo-plan" name="plan">
+                            <option
+                                    value="undecided"
+                                    data-es="Aún no lo sé"
+                            >
+                                I am not sure yet
+                            </option>
+
+                            <option value="essential" data-es="Esencial">
+                                Essential
+                            </option>
+
+                            <option value="professional" data-es="Profesional">
+                                Professional
+                            </option>
+
+                            <option value="growth" data-es="Crecimiento">
+                                Growth
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="demo-field demo-field-full">
+                        <label
+                                for="demo-message"
+                                data-es="¿Qué te gustaría conocer? (opcional)"
+                        >
+                            What would you like to learn? (optional)
+                        </label>
+
+                        <textarea
+                                id="demo-message"
+                                name="message"
+                                rows="4"
+                                maxlength="1200"
+                        ></textarea>
+                    </div>
+                </div>
+
+                <p
+                        class="demo-error"
+                        id="demo-error"
+                        role="alert"
+                        tabindex="-1"
+                        data-es="El formulario no está disponible en este momento. Inténtalo más tarde."
+                        hidden
+                >
+                    The form is currently unavailable. Please try again later.
+                </p>
+
+                <button
+                        class="demo-submit"
+                        type="submit"
+                        data-es="Enviar solicitud de demo"
+                >
+                    Send demo request
+                </button>
+            </form>
         </div>
     </section>
 </main>
