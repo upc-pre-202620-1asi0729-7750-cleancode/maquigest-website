@@ -973,6 +973,135 @@
             </form>
         </div>
     </section>
+    <section
+            class="contact-section"
+            id="contact"
+            aria-labelledby="contact-title"
+    >
+        <div class="contact-container">
+            <div class="contact-header">
+          <span class="contact-badge" data-es="Contacto">
+            Contact
+          </span>
+
+                <h2
+                        id="contact-title"
+                        data-es="¿En qué podemos ayudarte?"
+                >
+                    How can we help you?
+                </h2>
+
+                <p
+                        data-es="¿Tienes preguntas sobre MaquiGest, sus funcionalidades o sus planes? Envíanos tu consulta y nuestro equipo te responderá por correo electrónico."
+                >
+                    Do you have questions about MaquiGest, its features or its
+                    plans? Send us your inquiry and our team will reply by email.
+                </p>
+            </div>
+
+            <form
+                    class="contact-form"
+                    id="contact-form"
+                    action=https://formspree.io/f/mgaerknn
+                    method="POST"
+                    aria-labelledby="contact-form-title"
+                    aria-describedby="contact-required-note"
+            >
+                <input type="hidden" name="request_type" value="contact" />
+                <input type="hidden" name="_language" value="en" />
+
+                <h3
+                        id="contact-form-title"
+                        data-es="Envíanos un mensaje"
+                >
+                    Send us a message
+                </h3>
+
+                <p
+                        class="contact-form-note"
+                        id="contact-required-note"
+                        data-es="Los campos con * son obligatorios."
+                >
+                    Fields marked with * are required.
+                </p>
+
+                <div class="contact-form-grid">
+                    <div class="contact-field">
+                        <label
+                                for="contact-name"
+                                data-es="Nombre completo *"
+                        >
+                            Full name *
+                        </label>
+
+                        <input
+                                type="text"
+                                id="contact-name"
+                                name="name"
+                                autocomplete="name"
+                                minlength="2"
+                                maxlength="100"
+                                required
+                        />
+                    </div>
+
+                    <div class="contact-field">
+                        <label
+                                for="contact-email"
+                                data-es="Correo electrónico *"
+                        >
+                            Email address *
+                        </label>
+
+                        <input
+                                type="email"
+                                id="contact-email"
+                                name="email"
+                                autocomplete="email"
+                                maxlength="254"
+                                required
+                        />
+                    </div>
+
+                    <div class="contact-field contact-field-full">
+                        <label
+                                for="contact-message"
+                                data-es="Tu consulta *"
+                        >
+                            Your inquiry *
+                        </label>
+
+                        <textarea
+                                id="contact-message"
+                                name="message"
+                                rows="5"
+                                maxlength="2000"
+                                required
+                        ></textarea>
+                    </div>
+                </div>
+
+                <p
+                        class="contact-error"
+                        id="contact-error"
+                        role="alert"
+                        tabindex="-1"
+                        data-es="El formulario no está disponible en este momento. Inténtalo más tarde."
+                        hidden
+                >
+                    The form is currently unavailable. Please try again later.
+                </p>
+
+                <button
+                        class="contact-submit"
+                        type="submit"
+                        data-es="Enviar consulta"
+                >
+                    Send inquiry
+                </button>
+            </form>
+        </div>
+    </section>
 </main>
 
 <!-- FOOTER -->
