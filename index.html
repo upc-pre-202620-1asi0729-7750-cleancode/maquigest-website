@@ -1,0 +1,1186 @@
+﻿<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title data-es="MaquiGest | Gestión de alquiler de maquinaria">
+        MaquiGest | Equipment rental management
+    </title>
+
+    <meta
+            name="description"
+            content="Manage construction equipment rentals in one place. Organize inventory, availability, reservations, rentals and maintenance with MaquiGest."
+            data-es="Gestiona el alquiler de maquinaria para construcción en un solo lugar. Organiza inventario, disponibilidad, reservas, alquileres y mantenimiento con MaquiGest."
+    />
+
+    <meta
+            name="keywords"
+            content="equipment rental, construction equipment, rental management software, MaquiGest"
+            data-es="alquiler de maquinaria, gestión de maquinaria, alquiler de equipos, maquinaria para construcción, software de alquiler, gestión de alquileres, MaquiGest"
+    />
+
+    <meta name="author" content="CleanCode" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
+    <script src="js/forms.js" defer></script>
+    <link
+            rel="icon"
+            type="image/jpeg"
+            href="assets/images/maquigest-symbol.png"
+    />
+</head>
+
+<body>
+<a
+        class="skip-link"
+        href="#main-content"
+        data-es="Saltar al contenido"
+>
+    Skip to content
+</a>
+
+<header class="header">
+    <div class="header-container">
+        <a class="brand" href="#home">
+            <img
+                    src="assets/images/maquigest-symbol.png"
+                    alt=""
+                    width="1490"
+                    height="1055"
+            />
+            <span>MaquiGest</span>
+        </a>
+
+        <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-controls="nav-menu"
+                aria-expanded="false"
+                hidden
+        >
+            <span data-es="Menú">Menu</span>
+        </button>
+
+        <span
+                class="sr-only"
+                id="navigation-label"
+                data-es="Navegación principal"
+        >
+          Main navigation
+        </span>
+
+        <nav
+                class="header-nav"
+                id="nav-menu"
+                aria-labelledby="navigation-label"
+        >
+            <a href="#home" data-es="Inicio">Home</a>
+            <a href="#benefits" data-es="Beneficios">Benefits</a>
+            <a href="#features" data-es="Funcionalidades">Features</a>
+            <a href="#about" data-es="Nosotros">About</a>
+            <a href="#planes" data-es="Planes">Plans</a>
+            <a href="#contact" data-es="Contacto">Contact</a>
+
+            <a
+                    class="nav-demo"
+                    href="#demo"
+                    data-es="Solicitar demo"
+            >
+                Request demo
+            </a>
+        </nav>
+
+        <button
+                class="language-toggle"
+                id="language-toggle"
+                type="button"
+                lang="es-419"
+                hidden
+        >
+            Español
+        </button>
+    </div>
+</header>
+
+<main id="main-content">
+    <section class="home" id="home" aria-labelledby="home-title">
+        <div class="home-container">
+            <div class="home-text">
+                <p
+                        class="home-badge"
+                        data-es="Gestión de alquiler de maquinaria"
+                >
+                    Equipment rental management
+                </p>
+
+                <h1 id="home-title">
+          <span data-es="Organiza tus equipos.">
+            Organize your equipment.
+          </span>
+
+                    <span
+                            class="home-highlight"
+                            data-es="Controla cada alquiler."
+                    >
+            Stay on top of every rental.
+          </span>
+                </h1>
+
+                <p
+                        class="home-description"
+                        data-es="Centraliza inventario, reservas, alquileres y mantenimiento en una plataforma diseñada para pequeñas empresas de alquiler de maquinaria para construcción."
+                >
+                    Bring inventory, reservations, rentals and maintenance together
+                    in a platform designed for small construction equipment rental
+                    businesses.
+                </p>
+
+                <div class="home-actions">
+                    <a
+                            class="home-button home-button-primary"
+                            href="#demo"
+                            data-es="Solicitar demo"
+                    >
+                        Request demo
+                    </a>
+
+                    <a
+                            class="home-button home-button-secondary"
+                            href="#planes"
+                            data-es="Ver planes"
+                    >
+                        View plans
+                    </a>
+                </div>
+            </div>
+
+            <div class="home-image">
+                <img
+                        src="assets/images/maquigest-logo.png"
+                        alt="MaquiGest"
+                        width="1536"
+                        height="1024"
+                />
+            </div>
+        </div>
+    </section>
+    <section
+            class="benefits-section"
+            id="benefits"
+            aria-labelledby="benefits-title"
+    >
+        <div class="benefits-container">
+            <div class="benefits-header">
+            <span class="benefits-badge" data-es="Beneficios">
+              Benefits
+            </span>
+
+                <h2
+                        id="benefits-title"
+                        data-es="Menos información dispersa. Más control."
+                >
+                    Less scattered information. More control.
+                </h2>
+
+                <p
+                        data-es="Organiza las operaciones de tu negocio alrededor de cada equipo y cada alquiler."
+                >
+                    Organize your business operations around each piece
+                    of equipment and every rental.
+                </p>
+            </div>
+
+            <div class="benefits-grid">
+                <article class="benefit-card">
+              <span class="benefit-number" aria-hidden="true">
+                01
+              </span>
+
+                    <h3 data-es="Disponibilidad clara">
+                        Clear availability
+                    </h3>
+
+                    <p
+                            data-es="Consulta qué equipos están disponibles, reservados o alquilados antes de aceptar nuevas solicitudes."
+                    >
+                        Check which equipment is available, reserved or rented
+                        before accepting new requests.
+                    </p>
+                </article>
+
+                <article class="benefit-card">
+              <span class="benefit-number" aria-hidden="true">
+                02
+              </span>
+
+                    <h3 data-es="Operaciones conectadas">
+                        Connected operations
+                    </h3>
+
+                    <p
+                            data-es="Reúne las reservas, entregas y devoluciones para dar seguimiento al alquiler sin depender de registros dispersos."
+                    >
+                        Bring reservations, deliveries and returns together
+                        to follow each rental without relying on scattered records.
+                    </p>
+                </article>
+
+                <article class="benefit-card">
+              <span class="benefit-number" aria-hidden="true">
+                03
+              </span>
+
+                    <h3 data-es="Cuidado de tus equipos">
+                        Equipment care
+                    </h3>
+
+                    <p
+                            data-es="Mantén un historial de incidencias y mantenimientos para conocer el estado operativo de tu maquinaria."
+                    >
+                        Keep a history of incidents and maintenance to understand
+                        the operating condition of your equipment.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section
+            class="features-section"
+            id="features"
+            aria-labelledby="features-title"
+    >
+        <div class="features-container">
+            <div class="features-header">
+            <span class="features-badge" data-es="Funcionalidades">
+              Features
+            </span>
+
+                <h2
+                        id="features-title"
+                        data-es="Todo el ciclo de alquiler, en un solo lugar"
+                >
+                    The entire rental cycle, in one place
+                </h2>
+
+                <p
+                        data-es="Herramientas enfocadas en las tareas diarias de empresas de alquiler de maquinaria y pequeñas constructoras."
+                >
+                    Tools focused on the everyday tasks of equipment rental
+                    businesses and small construction companies.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <article class="feature-card">
+                    <h3 data-es="Inventario de maquinaria">
+                        Equipment inventory
+                    </h3>
+
+                    <p
+                            data-es="Registra tus equipos y mantén actualizada la información sobre sus características, ubicación y estado operativo."
+                    >
+                        Register your equipment and keep its specifications,
+                        location and operating condition up to date.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <h3 data-es="Disponibilidad y reservas">
+                        Availability and reservations
+                    </h3>
+
+                    <p
+                            data-es="Consulta la disponibilidad por periodo y revisa las solicitudes para confirmar o rechazar reservas."
+                    >
+                        Check availability for a specific period and review
+                        requests to accept or reject reservations.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <h3 data-es="Seguimiento de alquileres">
+                        Rental tracking
+                    </h3>
+
+                    <p
+                            data-es="Consulta los alquileres activos, los equipos asociados y sus periodos para conocer el estado de cada operación."
+                    >
+                        View active rentals, the equipment involved and rental
+                        periods to keep track of each operation.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <h3 data-es="Entregas y devoluciones">
+                        Deliveries and returns
+                    </h3>
+
+                    <p
+                            data-es="Registra la entrega y devolución de la maquinaria para mantener la trazabilidad de los equipos durante el alquiler."
+                    >
+                        Record equipment deliveries and returns to maintain
+                        traceability throughout each rental.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <h3 data-es="Mantenimiento e incidencias">
+                        Maintenance and incidents
+                    </h3>
+
+                    <p
+                            data-es="Programa mantenimientos, registra incidencias y consulta el historial de intervenciones de cada equipo."
+                    >
+                        Schedule maintenance, record incidents and review
+                        the service history of each piece of equipment.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <h3 data-es="Búsqueda y solicitud de equipos">
+                        Equipment search and requests
+                    </h3>
+
+                    <p
+                            data-es="Permite a pequeñas constructoras buscar maquinaria, consultar sus características y disponibilidad, y solicitar un alquiler."
+                    >
+                        Help small construction companies find equipment,
+                        check its specifications and availability, and request
+                        a rental.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section
+            class="about-section"
+            id="about"
+            aria-labelledby="about-title"
+    >
+        <div class="about-container">
+            <div class="about-header">
+            <span class="about-badge" data-es="Quiénes somos">
+              About us
+            </span>
+
+                <h2
+                        id="about-title"
+                        data-es="CleanCode, el equipo detrás de MaquiGest"
+                >
+                    CleanCode, the team behind MaquiGest
+                </h2>
+
+                <p
+                        data-es="CleanCode es una startup orientada al desarrollo de soluciones digitales accesibles que permitan organizar y optimizar los procesos de pequeñas y medianas empresas. Su propuesta se enfoca en resolver problemas operativos mediante herramientas especializadas, sencillas de utilizar y adaptadas a las necesidades de sus usuarios."
+                >
+                    CleanCode is a startup focused on developing accessible
+                    digital solutions to organize and optimize processes for
+                    small and medium-sized businesses. Its approach focuses on
+                    solving operational problems through specialized tools
+                    that are easy to use and tailored to its users' needs.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <article class="about-card">
+                    <h3 data-es="Nuestra misión">
+                        Our mission
+                    </h3>
+
+                    <p
+                            data-es="Nuestra misión es facilitar la gestión integral de las pequeñas y medianas empresas dedicadas al alquiler de maquinaria y equipos para construcción mediante una plataforma digital sencilla, accesible y confiable. Buscamos centralizar sus operaciones, reducir errores relacionados con la disponibilidad y las reservas, mejorar el control del estado de los equipos y brindar una mejor experiencia tanto a las empresas como a las personas que alquilan maquinaria."
+                    >
+                        Our mission is to help small and medium-sized construction
+                        machinery and equipment rental businesses manage all their
+                        operations through a simple, accessible and reliable
+                        digital platform. We aim to centralize their operations,
+                        reduce errors related to availability and reservations,
+                        improve control over equipment condition and provide a
+                        better experience for both businesses and people who
+                        rent machinery.
+                    </p>
+                </article>
+
+                <article class="about-card">
+                    <h3 data-es="Nuestra visión">
+                        Our vision
+                    </h3>
+
+                    <p
+                            data-es="Nuestra visión es convertirnos en una startup referente en el Perú en soluciones digitales para la gestión del alquiler de maquinaria de construcción, contribuyendo a que las pequeñas y medianas empresas profesionalicen sus operaciones y brinden servicios más eficientes, organizados y confiables."
+                    >
+                        Our vision is to become a leading startup in Peru
+                        in digital solutions for construction equipment rental
+                        management, helping small and medium-sized businesses
+                        professionalize their operations and provide more
+                        efficient, organized and reliable services.
+                    </p>
+                </article>
+            </div>
+
+            <div class="about-values">
+                <h3 data-es="Nuestros valores">
+                    Our values
+                </h3>
+
+                <ul class="about-values-list">
+                    <li>
+                        <strong data-es="Innovación:">
+                            Innovation:
+                        </strong>
+                        <span
+                                data-es="Aplicamos tecnología para mejorar y simplificar los procesos tradicionales del alquiler de maquinaria."
+                        >
+                  We apply technology to improve and simplify traditional
+                  equipment rental processes.
+                </span>
+                    </li>
+
+                    <li>
+                        <strong data-es="Simplicidad:">
+                            Simplicity:
+                        </strong>
+                        <span
+                                data-es="Diseñamos soluciones comprensibles y accesibles para empresas con diferentes niveles de experiencia tecnológica."
+                        >
+                  We design solutions that are easy to understand and
+                  accessible to businesses with different levels of
+                  technological experience.
+                </span>
+                    </li>
+
+                    <li>
+                        <strong data-es="Responsabilidad:">
+                            Responsibility:
+                        </strong>
+                        <span
+                                data-es="Promovemos una gestión adecuada de los equipos, la información y las operaciones de alquiler."
+                        >
+                  We promote proper management of equipment, information
+                  and rental operations.
+                </span>
+                    </li>
+
+                    <li>
+                        <strong data-es="Colaboración:">
+                            Collaboration:
+                        </strong>
+                        <span
+                                data-es="Valoramos el trabajo en equipo y la comunicación con las empresas y personas que utilizarán MaquiGest."
+                        >
+                  We value teamwork and communication with the businesses
+                  and people who will use MaquiGest.
+                </span>
+                    </li>
+
+                    <li>
+                        <strong data-es="Calidad:">
+                            Quality:
+                        </strong>
+                        <span
+                                data-es="Buscamos ofrecer una plataforma confiable, organizada y orientada a las necesidades reales de sus usuarios."
+                        >
+                  We strive to offer a reliable, organized platform
+                  focused on the real needs of its users.
+                </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section
+            class="solutions-section"
+            id="solutions"
+            aria-labelledby="solutions-title"
+    >
+        <div class="solutions-container">
+            <div class="solutions-header">
+          <span class="solutions-badge" data-es="Soluciones">
+            Solutions
+          </span>
+
+                <h2
+                        id="solutions-title"
+                        data-es="Gestiona tus alquileres. Haz avanzar tus obras."
+                >
+                    Manage your rentals. Keep your projects moving.
+                </h2>
+
+                <p
+                        data-es="MaquiGest está dirigido a empresas de alquiler de maquinaria y a pequeñas constructoras y contratistas que necesitan equipos para sus proyectos."
+                >
+                    MaquiGest is designed for equipment rental businesses and small
+                    construction companies and contractors that need equipment for
+                    their projects.
+                </p>
+            </div>
+
+            <div class="solutions-grid">
+                <article class="solution-card">
+                    <h3 data-es="Empresas de alquiler">
+                        Rental businesses
+                    </h3>
+
+                    <p
+                            data-es="Centraliza la información de tus equipos y organiza las operaciones de tu negocio durante todo el ciclo de alquiler."
+                    >
+                        Centralize your equipment information and organize your
+                        business operations throughout the rental cycle.
+                    </p>
+
+                    <ul class="solution-list">
+                        <li
+                                data-es="Consulta el inventario, la ubicación y la disponibilidad de tus equipos."
+                        >
+                            Check your equipment inventory, location and availability.
+                        </li>
+
+                        <li
+                                data-es="Gestiona las solicitudes de reserva y los alquileres activos."
+                        >
+                            Manage reservation requests and active rentals.
+                        </li>
+
+                        <li
+                                data-es="Registra las entregas y devoluciones de maquinaria."
+                        >
+                            Record equipment deliveries and returns.
+                        </li>
+
+                        <li
+                                data-es="Mantén un registro de incidencias y del mantenimiento de cada equipo."
+                        >
+                            Keep track of incidents and maintenance for each piece
+                            of equipment.
+                        </li>
+                    </ul>
+
+                    <a
+                            class="solution-button solution-button-primary"
+                            href="#demo"
+                            data-es="Solicitar una demo"
+                    >
+                        Request a demo
+                    </a>
+                </article>
+
+                <article class="solution-card solution-card-construction">
+                    <h3 data-es="Constructoras y contratistas">
+                        Construction companies and contractors
+                    </h3>
+
+                    <p
+                            data-es="Encuentra los equipos que necesitas para tus obras y consulta la información de tus alquileres desde un solo lugar."
+                    >
+                        Find the equipment you need for your construction projects
+                        and access your rental information in one place.
+                    </p>
+
+                    <ul class="solution-list">
+                        <li
+                                data-es="Busca maquinaria según las necesidades de tu proyecto."
+                        >
+                            Search for equipment that fits your project needs.
+                        </li>
+
+                        <li
+                                data-es="Consulta la disponibilidad y las condiciones de alquiler."
+                        >
+                            Check equipment availability and rental conditions.
+                        </li>
+
+                        <li
+                                data-es="Solicita equipos para el periodo en que los necesitas."
+                        >
+                            Request equipment for the period you need it.
+                        </li>
+
+                        <li
+                                data-es="Realiza el seguimiento de tus alquileres y sus fechas de devolución."
+                        >
+                            Keep track of your rentals and their return dates.
+                        </li>
+                    </ul>
+
+                    <a
+                            class="solution-button solution-button-secondary"
+                            href="#contact"
+                            data-es="Consultar sobre MaquiGest"
+                    >
+                        Ask about MaquiGest
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section
+            class="plans-section"
+            id="planes"
+            aria-labelledby="plans-title"
+    >
+        <div class="plans-container">
+            <div class="plans-header">
+          <span class="plans-badge" data-es="Planes">
+            Plans
+          </span>
+
+                <h2
+                        id="plans-title"
+                        data-es="Un plan para cada etapa de tu negocio"
+                >
+                    A plan for every stage of your business
+                </h2>
+
+                <p
+                        data-es="Elige una propuesta según las necesidades de tu empresa de alquiler de maquinaria."
+                >
+                    Choose an option that fits the needs of your equipment
+                    rental business.
+                </p>
+            </div>
+
+            <div class="plans-grid">
+                <article class="plan-card" aria-labelledby="essential-title">
+                    <h3 id="essential-title" data-es="Esencial">
+                        Essential
+                    </h3>
+
+                    <p class="plan-price">
+                        <span class="plan-currency">S/</span>
+                        <span class="plan-amount">79</span>
+                        <span class="plan-period" data-es="/ mes">/ month</span>
+                    </p>
+
+                    <p
+                            class="plan-description"
+                            data-es="Para comenzar a organizar tus equipos y solicitudes de reserva."
+                    >
+                        Start organizing your equipment and reservation requests.
+                    </p>
+
+                    <ul class="plan-list">
+                        <li data-es="Registro y gestión del inventario de equipos.">
+                            Equipment inventory registration and management.
+                        </li>
+
+                        <li data-es="Consulta del estado y la disponibilidad de equipos.">
+                            Equipment condition and availability tracking.
+                        </li>
+
+                        <li data-es="Gestión de solicitudes de reserva.">
+                            Reservation request management.
+                        </li>
+                    </ul>
+
+                    <a
+                            class="plan-button"
+                            href="#demo"
+                            data-plan="essential"
+                            data-es="Solicitar demo de Esencial"
+                    >
+                        Request an Essential demo
+                    </a>
+                </article>
+
+                <article
+                        class="plan-card plan-card-featured"
+                        aria-labelledby="professional-title"
+                >
+            <span class="plan-recommendation" data-es="Recomendado">
+              Recommended
+            </span>
+
+                    <h3 id="professional-title" data-es="Profesional">
+                        Professional
+                    </h3>
+
+                    <p class="plan-price">
+                        <span class="plan-currency">S/</span>
+                        <span class="plan-amount">149</span>
+                        <span class="plan-period" data-es="/ mes">/ month</span>
+                    </p>
+
+                    <p
+                            class="plan-description"
+                            data-es="Para centralizar las operaciones diarias de alquiler de tu empresa."
+                    >
+                        Centralize your company's day-to-day rental operations.
+                    </p>
+
+                    <ul class="plan-list">
+                        <li data-es="Todo lo incluido en Esencial.">
+                            Everything included in Essential.
+                        </li>
+
+                        <li data-es="Gestión de alquileres y contratos.">
+                            Rental and contract management.
+                        </li>
+
+                        <li data-es="Registro de pagos de los alquileres.">
+                            Rental payment records.
+                        </li>
+
+                        <li data-es="Registro de entregas y devoluciones.">
+                            Delivery and return records.
+                        </li>
+                    </ul>
+
+                    <a
+                            class="plan-button plan-button-featured"
+                            href="#demo"
+                            data-plan="professional"
+                            data-es="Solicitar demo de Profesional"
+                    >
+                        Request a Professional demo
+                    </a>
+                </article>
+
+                <article class="plan-card" aria-labelledby="growth-title">
+                    <h3 id="growth-title" data-es="Crecimiento">
+                        Growth
+                    </h3>
+
+                    <p class="plan-price">
+                        <span class="plan-currency">S/</span>
+                        <span class="plan-amount">249</span>
+                        <span class="plan-period" data-es="/ mes">/ month</span>
+                    </p>
+
+                    <p
+                            class="plan-description"
+                            data-es="Para ampliar el control operativo y gestionar el mantenimiento de tus equipos."
+                    >
+                        Expand your operational oversight and manage equipment
+                        maintenance.
+                    </p>
+
+                    <ul class="plan-list">
+                        <li data-es="Todo lo incluido en Profesional.">
+                            Everything included in Professional.
+                        </li>
+
+                        <li data-es="Registro de incidencias e inspecciones.">
+                            Incident and inspection records.
+                        </li>
+
+                        <li data-es="Programación del mantenimiento de equipos.">
+                            Equipment maintenance scheduling.
+                        </li>
+
+                        <li data-es="Historial de mantenimiento por equipo.">
+                            Maintenance history for each piece of equipment.
+                        </li>
+                    </ul>
+
+                    <a
+                            class="plan-button"
+                            href="#demo"
+                            data-plan="growth"
+                            data-es="Solicitar demo de Crecimiento"
+                    >
+                        Request a Growth demo
+                    </a>
+                </article>
+            </div>
+
+            <p
+                    class="plans-note"
+                    data-es="Planes y precios referenciales en soles (PEN), sujetos a confirmación."
+            >
+                Indicative plans and prices in Peruvian soles (PEN), subject
+                to confirmation.
+            </p>
+        </div>
+    </section>
+    <section
+            class="demo-section"
+            id="demo"
+            aria-labelledby="demo-title"
+    >
+        <div class="demo-container">
+            <div class="demo-content">
+          <span class="demo-badge" data-es="Solicitar demo">
+            Request a demo
+          </span>
+
+                <h2
+                        id="demo-title"
+                        data-es="Conoce cómo MaquiGest puede ayudarte a gestionar tus alquileres"
+                >
+                    Discover how MaquiGest can help you manage your rentals
+                </h2>
+
+                <p
+                        class="demo-description"
+                        data-es="Cuéntanos sobre tu empresa y lo que necesitas organizar. Nuestro equipo te contactará para coordinar una demostración."
+                >
+                    Tell us about your company and what you need to organize.
+                    Our team will contact you to arrange a demonstration.
+                </p>
+
+                <p
+                        class="demo-note"
+                        data-es="Puedes solicitar una demostración aunque todavía no hayas elegido un plan."
+                >
+                    You can request a demonstration even if you have not
+                    chosen a plan yet.
+                </p>
+            </div>
+
+            <form
+                    class="demo-form"
+                    id="demo-form"
+                    action= https://formspree.io/f/xdeoyggo
+                    method="POST"
+                    aria-labelledby="demo-form-title"
+                    aria-describedby="demo-required-note"
+            >
+                <input type="hidden" name="request_type" value="demo" />
+                <input type="hidden" name="_language" value="en" />
+
+                <h3 id="demo-form-title" data-es="Tus datos">
+                    Your details
+                </h3>
+
+                <p
+                        class="demo-form-note"
+                        id="demo-required-note"
+                        data-es="Los campos con * son obligatorios."
+                >
+                    Fields marked with * are required.
+                </p>
+
+                <div class="demo-form-grid">
+                    <div class="demo-field">
+                        <label
+                                for="demo-name"
+                                data-es="Nombre completo *"
+                        >
+                            Full name *
+                        </label>
+
+                        <input
+                                type="text"
+                                id="demo-name"
+                                name="name"
+                                autocomplete="name"
+                                minlength="2"
+                                maxlength="100"
+                                required
+                        />
+                    </div>
+
+                    <div class="demo-field">
+                        <label
+                                for="demo-email"
+                                data-es="Correo electrónico *"
+                        >
+                            Email address *
+                        </label>
+
+                        <input
+                                type="email"
+                                id="demo-email"
+                                name="email"
+                                autocomplete="email"
+                                maxlength="254"
+                                required
+                        />
+                    </div>
+
+                    <div class="demo-field demo-field-full">
+                        <label
+                                for="demo-company"
+                                data-es="Nombre de la empresa *"
+                        >
+                            Company name *
+                        </label>
+
+                        <input
+                                type="text"
+                                id="demo-company"
+                                name="company"
+                                autocomplete="organization"
+                                minlength="2"
+                                maxlength="120"
+                                required
+                        />
+                    </div>
+
+                    <div class="demo-field demo-field-full">
+                        <label
+                                for="demo-plan"
+                                data-es="Plan de interés"
+                        >
+                            Plan of interest
+                        </label>
+
+                        <select id="demo-plan" name="plan">
+                            <option
+                                    value="undecided"
+                                    data-es="Aún no lo sé"
+                            >
+                                I am not sure yet
+                            </option>
+
+                            <option value="essential" data-es="Esencial">
+                                Essential
+                            </option>
+
+                            <option value="professional" data-es="Profesional">
+                                Professional
+                            </option>
+
+                            <option value="growth" data-es="Crecimiento">
+                                Growth
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="demo-field demo-field-full">
+                        <label
+                                for="demo-message"
+                                data-es="¿Qué te gustaría conocer? (opcional)"
+                        >
+                            What would you like to learn? (optional)
+                        </label>
+
+                        <textarea
+                                id="demo-message"
+                                name="message"
+                                rows="4"
+                                maxlength="1200"
+                        ></textarea>
+                    </div>
+                </div>
+
+                <p
+                        class="demo-error"
+                        id="demo-error"
+                        role="alert"
+                        tabindex="-1"
+                        data-es="El formulario no está disponible en este momento. Inténtalo más tarde."
+                        hidden
+                >
+                    The form is currently unavailable. Please try again later.
+                </p>
+
+                <button
+                        class="demo-submit"
+                        type="submit"
+                        data-es="Enviar solicitud de demo"
+                >
+                    Send demo request
+                </button>
+            </form>
+        </div>
+    </section>
+    <section
+            class="contact-section"
+            id="contact"
+            aria-labelledby="contact-title"
+    >
+        <div class="contact-container">
+            <div class="contact-header">
+          <span class="contact-badge" data-es="Contacto">
+            Contact
+          </span>
+
+                <h2
+                        id="contact-title"
+                        data-es="¿En qué podemos ayudarte?"
+                >
+                    How can we help you?
+                </h2>
+
+                <p
+                        data-es="¿Tienes preguntas sobre MaquiGest, sus funcionalidades o sus planes? Envíanos tu consulta y nuestro equipo te responderá por correo electrónico."
+                >
+                    Do you have questions about MaquiGest, its features or its
+                    plans? Send us your inquiry and our team will reply by email.
+                </p>
+            </div>
+
+            <form
+                    class="contact-form"
+                    id="contact-form"
+                    action=https://formspree.io/f/mgaerknn
+                    method="POST"
+                    aria-labelledby="contact-form-title"
+                    aria-describedby="contact-required-note"
+            >
+                <input type="hidden" name="request_type" value="contact" />
+                <input type="hidden" name="_language" value="en" />
+
+                <h3
+                        id="contact-form-title"
+                        data-es="Envíanos un mensaje"
+                >
+                    Send us a message
+                </h3>
+
+                <p
+                        class="contact-form-note"
+                        id="contact-required-note"
+                        data-es="Los campos con * son obligatorios."
+                >
+                    Fields marked with * are required.
+                </p>
+
+                <div class="contact-form-grid">
+                    <div class="contact-field">
+                        <label
+                                for="contact-name"
+                                data-es="Nombre completo *"
+                        >
+                            Full name *
+                        </label>
+
+                        <input
+                                type="text"
+                                id="contact-name"
+                                name="name"
+                                autocomplete="name"
+                                minlength="2"
+                                maxlength="100"
+                                required
+                        />
+                    </div>
+
+                    <div class="contact-field">
+                        <label
+                                for="contact-email"
+                                data-es="Correo electrónico *"
+                        >
+                            Email address *
+                        </label>
+
+                        <input
+                                type="email"
+                                id="contact-email"
+                                name="email"
+                                autocomplete="email"
+                                maxlength="254"
+                                required
+                        />
+                    </div>
+
+                    <div class="contact-field contact-field-full">
+                        <label
+                                for="contact-message"
+                                data-es="Tu consulta *"
+                        >
+                            Your inquiry *
+                        </label>
+
+                        <textarea
+                                id="contact-message"
+                                name="message"
+                                rows="5"
+                                maxlength="2000"
+                                required
+                        ></textarea>
+                    </div>
+                </div>
+
+                <p
+                        class="contact-error"
+                        id="contact-error"
+                        role="alert"
+                        tabindex="-1"
+                        data-es="El formulario no está disponible en este momento. Inténtalo más tarde."
+                        hidden
+                >
+                    The form is currently unavailable. Please try again later.
+                </p>
+
+                <button
+                        class="contact-submit"
+                        type="submit"
+                        data-es="Enviar consulta"
+                >
+                    Send inquiry
+                </button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a class="footer-brand-link" href="#home">
+                    <img
+                            class="footer-logo"
+                            src="assets/images/maquigest-symbol-light.png"
+                            alt=""
+                            width="1553"
+                            height="1013"
+                    />
+                    <span>MaquiGest</span>
+                </a>
+
+                <p
+                        data-es="Una plataforma para organizar el alquiler de maquinaria y equipos de construcción."
+                >
+                    A platform to organize construction machinery and
+                    equipment rentals.
+                </p>
+            </div>
+
+            <nav aria-labelledby="footer-navigation-title">
+                <h2
+                        class="footer-title"
+                        id="footer-navigation-title"
+                        data-es="Explora MaquiGest"
+                >
+                    Explore MaquiGest
+                </h2>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="#home" data-es="Inicio">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#features" data-es="Funcionalidades">
+                            Features
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#planes" data-es="Planes">
+                            Plans
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" data-es="Contacto">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 CleanCode. MaquiGest.</p>
+
+            <a
+                    href="terms.html"
+                    data-es="Términos y condiciones"
+            >
+                Terms and conditions
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
